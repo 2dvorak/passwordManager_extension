@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>kms passcheck</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="check.js"></script>
+		<link rel="stylesheet" href="hsimp.css">
+        <script src="hsimp.min.js"></script>
+	</head>
+	<body style="width:350px;">
+	    <div class="panel">
+            <div class="panel-body">
+		        <h2>Password Generator</h2>
+		        <div class="form-group">
+		            <select id="select" size="3" class="form-control">
+			            <option id="one"></option>
+			            <option id="two"></option>
+			            <option id="three"></option>
+		            </select>
+		            <input id="hiddenPW" type="hidden"></input>
+                    <label id="password-time" class="hsimp-time"></label>
+                    <ul style="display:none;" id="password-checks" class="hsimp-checks"></ul>
+		            <button class="btn btn-warning" id="refreshBtn">Refresh</button>
+		            <button class="btn btn-success" id="applyBtn">Apply</button>
+		        </div>
+		        <div class="form-group">
+		            <div class="checkbox-inline">
+                        <label><input id="small" type="checkbox" >a</label>
+                    </div>
+                    <div class="checkbox-inline">
+                        <label><input id="large" type="checkbox" >A</label>
+                    </div>
+                    <div class="checkbox-inline">
+                        <label><input id="num" type="checkbox" >1</label>
+                    </div>
+                    <div class="checkbox-inline">
+                        <label><input id="char" type="checkbox" >&#64;</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password length:</label>
+	                <input id="min" maxlength="2" size="2" type="text" value="6" >~<input id="max" maxlength="2" size="2" type="text" value="20" class="">
+		        </div>
+		        <div class="form-group">
+		            <div class="checkbox-inline">
+                        <label><input id="pre" type="checkbox" value="">URL Prefix</label>
+                    </div>
+                    <div class="checkbox-inline">
+                        <label><input id="suf" type="checkbox" value="">URL Suffix</label>
+                    </div>
+		        </div>
+		        <div class="form-group">
+	                <label>Your Own Pre/Suffix</label>
+	                <input type="text" id="opfix" size="6" placeholder="Prefix" class=""> <input type="text" id="osfix" size="6" placeholder="Suffix" class="">
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>

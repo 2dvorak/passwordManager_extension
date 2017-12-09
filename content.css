@@ -1,0 +1,85 @@
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    /*display: inline-block;*/
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 620px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 200%;
+    left: 50%;
+    margin-left: -310;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+/*input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.01) inset !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAc5JREFUOE/Nks1rE0EYxosnzy2IV3vqyVr8P8Q/QFtobDc7O7vJ7mY/Jl/bD71Y7KlgLxZBhILFg3rUi7SCpxY/ChYh1HRnkyZp0ySUkKJPZ7eQS1LJSXxhmMv8nvd9n3mGhv7Lmip4V2mJ3VU5e0wD9jRRzSWpz8YGGlYrsptaJbupNzyYrTkYzTmYp/NI1LInlLs5z/OuXCpEg8wNtZwupNoLUIM0KGfRUbgLqWpDb3ugvjt/uYDP1qzOYhcMYdm3IXMbG/V3eNJYhVxyOrTojPeIkLJ3XQBB8jgPybcw65sR/MA38L71EWE9r62DtjIg/abQKrnbCme/SdnBcnUVK7VniB0ku/DG0VshmoLe9MRKbL1nAvUgOyF2PZstm/jQuOi40/4e3a8EPC3ECHdgCGOFmS97BJRdd0QpuvtaPQvNz2C7+QX4E8JvunDoiXm6APrLtvsaSQrOkt15CIlbMHgeK4driAsfws4iB9Dr+dDgY/mHO9pXIPYpNkz23c/22SPQCsMMN6MvVEvpKA/Joxyk3dTMXwN1byt+jRTcF1qQbhuNiyDp4mfEej+lr/rkQGkMH5HtxC2yZ03Le1Yi/s26c/+1MjIw/E8fngNIcz6cUXBevgAAAABJRU5ErkJggg==") !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 18px 18px;
+    background-position: 98% 50%;
+    //transition: background-color 5000s ease-in-out 0s;
+}*/
+/*
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}*/
+/*
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}*/

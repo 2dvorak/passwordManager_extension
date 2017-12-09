@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Password Manager",
+  "description": "10조",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Password Checker!"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["content.css"],
+    "js": ["content.js" ]
+  }],
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications"
+  ],
+  
+  "web_accessible_resources": [
+    "exclamation.png"
+  ]
+}
