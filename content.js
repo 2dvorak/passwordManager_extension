@@ -501,6 +501,7 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     }
 });
 
+// https://stackoverflow.com/questions/8498592/extract-hostname-name-from-string
 // for domain name
 // domain name can be used to generate password or be used as key for checking date
 
