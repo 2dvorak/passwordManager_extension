@@ -167,7 +167,7 @@ function checkSavedDate(url) {
 
 function checkDate(date) {
     var d = new Date();
-    if(d.getTime() - date > 0) {//> 2592000000*3) {
+    if(d.getTime() - date > 2592000000*3) {
         return true;
     } else {
         return false;
